@@ -361,14 +361,15 @@
             // сменаПользователяToolStripMenuItem
             // 
             this.сменаПользователяToolStripMenuItem.Name = "сменаПользователяToolStripMenuItem";
-            this.сменаПользователяToolStripMenuItem.Size = new System.Drawing.Size(133, 20);
-            this.сменаПользователяToolStripMenuItem.Text = "Смена пользователя";
+            this.сменаПользователяToolStripMenuItem.Size = new System.Drawing.Size(119, 20);
+            this.сменаПользователяToolStripMenuItem.Text = "Сохранить в отчет";
+            
             // 
             // справкаToolStripMenuItem
             // 
             this.справкаToolStripMenuItem.Name = "справкаToolStripMenuItem";
-            this.справкаToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.справкаToolStripMenuItem.Text = "Справка";
+            this.справкаToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
+            this.справкаToolStripMenuItem.Text = "Помощь";
             // 
             // оПрограммеToolStripMenuItem
             // 
@@ -415,7 +416,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

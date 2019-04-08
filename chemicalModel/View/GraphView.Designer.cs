@@ -1,6 +1,6 @@
 ﻿namespace chemicalModel
 {
-    partial class Form2
+    partial class GraphView
     {
         /// <summary>
         /// Required designer variable.

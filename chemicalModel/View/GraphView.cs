@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace chemicalModel
 {
-    public partial class Form2 : Form
+    public partial class GraphView : Form
     {
-        public Form2()
+        public GraphView()
         {
             InitializeComponent();
         }

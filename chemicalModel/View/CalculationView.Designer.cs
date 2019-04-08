@@ -1,6 +1,6 @@
 ﻿namespace chemicalModel
 {
-    partial class Form1
+    partial class CalculationView
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.H = new System.Windows.Forms.Label();
+            this.W = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -48,39 +48,41 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox12 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.сменаПользователяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.оПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.H);
+            this.groupBox1.Controls.Add(this.W);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 341);
+            this.groupBox1.Location = new System.Drawing.Point(18, 27);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(130, 125);
             this.groupBox1.TabIndex = 0;
@@ -88,19 +90,32 @@
             this.groupBox1.Text = "Геометрические параметры канала";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // textBox1
+            // label3
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 38);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(45, 20);
-            this.textBox1.TabIndex = 0;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(57, 99);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(54, 13);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Длина, м";
             // 
-            // textBox2
+            // H
             // 
-            this.textBox2.Location = new System.Drawing.Point(6, 66);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(45, 20);
-            this.textBox2.TabIndex = 1;
+            this.H.AutoSize = true;
+            this.H.Location = new System.Drawing.Point(57, 73);
+            this.H.Name = "H";
+            this.H.Size = new System.Drawing.Size(62, 13);
+            this.H.TabIndex = 4;
+            this.H.Text = "Глубина, м";
+            // 
+            // W
+            // 
+            this.W.AutoSize = true;
+            this.W.Location = new System.Drawing.Point(57, 45);
+            this.W.Name = "W";
+            this.W.Size = new System.Drawing.Size(60, 13);
+            this.W.TabIndex = 3;
+            this.W.Text = "Ширина, м";
             // 
             // textBox3
             // 
@@ -108,33 +123,23 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(45, 20);
             this.textBox3.TabIndex = 2;
+            this.textBox3.Text = "12";
             // 
-            // label1
+            // textBox2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(57, 45);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Ширина, м";
+            this.textBox2.Location = new System.Drawing.Point(6, 66);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(45, 20);
+            this.textBox2.TabIndex = 1;
+            this.textBox2.Text = "0,1";
             // 
-            // label2
+            // textBox1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(57, 73);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 13);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Глубина, м";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(57, 99);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Длинна, м";
+            this.textBox1.Location = new System.Drawing.Point(6, 38);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(45, 20);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "0,3";
             // 
             // groupBox2
             // 
@@ -144,9 +149,9 @@
             this.groupBox2.Controls.Add(this.textBox4);
             this.groupBox2.Controls.Add(this.textBox5);
             this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Location = new System.Drawing.Point(279, 210);
+            this.groupBox2.Location = new System.Drawing.Point(154, 27);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(164, 125);
+            this.groupBox2.Size = new System.Drawing.Size(295, 125);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Параметры свойств материала";
@@ -156,18 +161,18 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(57, 99);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 13);
+            this.label4.Size = new System.Drawing.Size(148, 13);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Длинна, м";
+            this.label4.Text = "Температура плавления, ℃";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(57, 73);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 13);
+            this.label5.Size = new System.Drawing.Size(195, 13);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Глубина, м";
+            this.label5.Text = "Удельная тепло емкость, Дж/(кг*℃)";
             // 
             // label6
             // 
@@ -184,6 +189,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(45, 20);
             this.textBox4.TabIndex = 2;
+            this.textBox4.Text = "225";
             // 
             // textBox5
             // 
@@ -191,6 +197,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(45, 20);
             this.textBox5.TabIndex = 1;
+            this.textBox5.Text = "2150";
             // 
             // textBox6
             // 
@@ -198,6 +205,7 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(45, 20);
             this.textBox6.TabIndex = 0;
+            this.textBox6.Text = "1130";
             // 
             // groupBox3
             // 
@@ -205,9 +213,9 @@
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.textBox8);
             this.groupBox3.Controls.Add(this.textBox9);
-            this.groupBox3.Location = new System.Drawing.Point(12, 210);
+            this.groupBox3.Location = new System.Drawing.Point(455, 27);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(239, 125);
+            this.groupBox3.Size = new System.Drawing.Size(239, 73);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Режимные параметры";
@@ -215,16 +223,16 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(57, 73);
+            this.label8.Location = new System.Drawing.Point(57, 56);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(123, 13);
+            this.label8.Size = new System.Drawing.Size(134, 13);
             this.label8.TabIndex = 4;
-            this.label8.Text = "Температура крышки, ";
+            this.label8.Text = "Температура крышки, ℃";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(57, 45);
+            this.label9.Location = new System.Drawing.Point(57, 28);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(176, 13);
             this.label9.TabIndex = 3;
@@ -232,17 +240,19 @@
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(6, 66);
+            this.textBox8.Location = new System.Drawing.Point(6, 49);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(45, 20);
             this.textBox8.TabIndex = 1;
+            this.textBox8.Text = "250";
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(6, 38);
+            this.textBox9.Location = new System.Drawing.Point(6, 21);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(45, 20);
             this.textBox9.TabIndex = 0;
+            this.textBox9.Text = "1,2";
             // 
             // groupBox4
             // 
@@ -256,21 +266,56 @@
             this.groupBox4.Controls.Add(this.textBox7);
             this.groupBox4.Controls.Add(this.textBox10);
             this.groupBox4.Controls.Add(this.textBox11);
-            this.groupBox4.Location = new System.Drawing.Point(12, 27);
+            this.groupBox4.Location = new System.Drawing.Point(18, 158);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(431, 177);
             this.groupBox4.TabIndex = 3;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Эмпрические коэф. мат. модели";
+            this.groupBox4.Text = "Эмпрические коэффициенты  математической модели";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(57, 140);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(367, 13);
+            this.label13.TabIndex = 9;
+            this.label13.Text = "Коэффициент теплоотдачи от крышки канала к житскости, ВТ/(м^2*C)";
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(6, 133);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(45, 20);
+            this.textBox13.TabIndex = 8;
+            this.textBox13.Text = "500";
+            this.textBox13.TextChanged += new System.EventHandler(this.textBox13_TextChanged);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(57, 114);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(140, 13);
+            this.label12.TabIndex = 7;
+            this.label12.Text = "Индекс течения жидкости";
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(6, 107);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(45, 20);
+            this.textBox12.TabIndex = 6;
+            this.textBox12.Text = "0,7";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(57, 88);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(143, 13);
+            this.label7.Size = new System.Drawing.Size(154, 13);
             this.label7.TabIndex = 5;
-            this.label7.Text = "Температура приведения, ";
+            this.label7.Text = "Температура приведения, ℃";
             // 
             // label10
             // 
@@ -297,6 +342,7 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(45, 20);
             this.textBox7.TabIndex = 2;
+            this.textBox7.Text = "225";
             // 
             // textBox10
             // 
@@ -304,6 +350,7 @@
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(45, 20);
             this.textBox10.TabIndex = 1;
+            this.textBox10.Text = "0,017";
             // 
             // textBox11
             // 
@@ -311,39 +358,7 @@
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(45, 20);
             this.textBox11.TabIndex = 0;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(57, 114);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(140, 13);
-            this.label12.TabIndex = 7;
-            this.label12.Text = "Индекс течения жидкости";
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(6, 107);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(45, 20);
-            this.textBox12.TabIndex = 6;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(57, 140);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(327, 13);
-            this.label13.TabIndex = 9;
-            this.label13.Text = "Коэф. теплоотдачи от крышки канала к житскости, ВТ/(m^2*C)";
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(6, 133);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(45, 20);
-            this.textBox13.TabIndex = 8;
-            this.textBox13.TextChanged += new System.EventHandler(this.textBox13_TextChanged);
+            this.textBox11.Text = "2500";
             // 
             // menuStrip1
             // 
@@ -354,7 +369,7 @@
             this.выходToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(458, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(716, 24);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -363,7 +378,6 @@
             this.сменаПользователяToolStripMenuItem.Name = "сменаПользователяToolStripMenuItem";
             this.сменаПользователяToolStripMenuItem.Size = new System.Drawing.Size(119, 20);
             this.сменаПользователяToolStripMenuItem.Text = "Сохранить в отчет";
-            
             // 
             // справкаToolStripMenuItem
             // 
@@ -383,31 +397,41 @@
             this.выходToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.выходToolStripMenuItem.Text = "Выход";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(148, 386);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 47);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Исходные данные";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(279, 386);
+            this.button2.Location = new System.Drawing.Point(528, 239);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(103, 47);
+            this.button2.Size = new System.Drawing.Size(118, 56);
             this.button2.TabIndex = 6;
             this.button2.Text = "Рассчитать";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(6, 19);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(99, 20);
+            this.textBox14.TabIndex = 9;
+            this.textBox14.Text = "1,2";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.textBox14);
+            this.groupBox5.Location = new System.Drawing.Point(455, 104);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(239, 48);
+            this.groupBox5.TabIndex = 10;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Шаг расчета по длине канала,м";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(458, 489);
+            this.ClientSize = new System.Drawing.Size(716, 352);
+            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -416,7 +440,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
-            
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -427,6 +451,8 @@
             this.groupBox4.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -436,8 +462,8 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label H;
+        private System.Windows.Forms.Label W;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
@@ -469,8 +495,9 @@
         private System.Windows.Forms.ToolStripMenuItem справкаToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem оПрограммеToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.GroupBox groupBox5;
     }
 }
 
